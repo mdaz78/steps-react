@@ -9,12 +9,6 @@ A React application demonstrating a step-by-step guide component with interactiv
 - **Toggle Visibility**: Close/open button to show or hide the steps component
 - **State Management**: Uses React `useState` hook to manage step state and component visibility
 
-## Steps
-
-1. Learn React ⚛️
-2. Apply for jobs 💼
-3. Invest your new income 🤑
-
 ## Technologies
 
 - **React** 19.2.0
