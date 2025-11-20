@@ -1,16 +1,76 @@
-# React + Vite
+# Steps Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application demonstrating a step-by-step guide component with interactive navigation. This project is part of "The Ultimate React Course 2025" and showcases fundamental React concepts including state management with hooks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Step Navigation**: Navigate through a 3-step process using Previous and Next buttons
+- **Visual Step Indicators**: Active step highlighting with numbered indicators
+- **Toggle Visibility**: Close/open button to show or hide the steps component
+- **State Management**: Uses React `useState` hook to manage step state and component visibility
 
-## React Compiler
+## Steps
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Learn React ⚛️
+2. Apply for jobs 💼
+3. Invest your new income 🤑
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** 19.2.0
+- **Vite** 7.2.2
+- **ESLint** for code quality
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
+
+### Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── components/
+│   └── Steps.jsx      # Main Steps component
+├── App.jsx            # Root component
+├── main.jsx           # Application entry point
+└── index.css          # Global styles
+```
+
+## Component Details
+
+The `Steps` component demonstrates:
+
+- React Hooks (`useState`)
+- Conditional rendering
+- Event handling
+- State updates with functional updates
+
+## License
+
+This project is part of a course and is for educational purposes.
