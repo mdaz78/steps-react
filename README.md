@@ -8,7 +8,7 @@ A React application demonstrating a step-by-step guide component with interactiv
 - **Visual Step Indicators**: Active step highlighting with numbered indicators
 - **Toggle Visibility**: Close/open button to show or hide the steps component
 - **State Management**: Uses React `useState` hook to manage step state and component visibility
-- **Reusable Components**: Custom `Button` component demonstrating component composition and props
+- **Reusable Components**: Custom `Button` and `StepMessage` components demonstrating component composition and props
 
 ## Technologies
 
@@ -51,11 +51,12 @@ npm run dev
 ```
 src/
 ├── components/
-│   ├── Steps.jsx      # Main Steps component
-│   └── Button.jsx     # Reusable Button component
-├── App.jsx            # Root component
-├── main.jsx           # Application entry point
-└── index.css          # Global styles
+│   ├── Steps.jsx         # Main Steps component
+│   ├── Button.jsx        # Reusable Button component
+│   └── StepMessage.jsx   # Step message display component
+├── App.jsx               # Root component
+├── main.jsx              # Application entry point
+└── index.css             # Global styles
 ```
 
 ## Component Details
@@ -73,6 +74,12 @@ The `Button` component is a reusable component that accepts props for styling an
 - Props passing
 - Component composition
 - Children prop pattern
+
+The `StepMessage` component displays the current step number and message content, demonstrating:
+
+- Props for dynamic content (`step` prop)
+- Children prop for flexible content rendering
+- Component composition pattern
 
 ## License
 
