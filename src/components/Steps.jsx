@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from './Button';
 
 const messages = [
   'Learn React ⚛️',
@@ -48,18 +49,20 @@ export default function Steps() {
           </p>
 
           <div className='buttons'>
-            <button
-              style={{ backgroundColor: '#7950f2', color: '#fff' }}
+            <Button
+              backgroundColor={'#7950f2'}
+              color={'#fff'}
               onClick={handlePreviousClick}
             >
-              Previous
-            </button>
-            <button
-              style={{ backgroundColor: '#7950f2', color: '#fff' }}
+              <span>👈</span> Previous
+            </Button>
+            <Button
+              backgroundColor={'#7950f2'}
+              color={'#fff'}
               onClick={handleNextClick}
             >
-              Next
-            </button>
+              Next <span>👉</span>
+            </Button>
           </div>
         </div>
       )}
